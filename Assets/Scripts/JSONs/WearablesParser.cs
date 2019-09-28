@@ -13,6 +13,20 @@ namespace Metis.ItemMenu
 
         private void Awake()
         {
+            // Create empty Wearables to have the character "Naked"
+            var emptyModifiers = new Modifier[4]
+            {
+                new Modifier(ModifierType.HIT_FORCE, 0f),
+                new Modifier(ModifierType.JUMP_FORCE, 0f),
+                new Modifier(ModifierType.MOVING_SPEED, 0f),
+                new Modifier(ModifierType.PROTECTION, 0f),
+            };
+
+            _dispatcher.Dispatch(new Wearable("HNONE", "No helmet", WearableType.HELMET, emptyModifiers, ""));
+            _dispatcher.Dispatch(new Wearable("TNONE", "No top", WearableType.TOP, emptyModifiers, ""));
+            _dispatcher.Dispatch(new Wearable("PNONE", "No trousers", WearableType.PANTS, emptyModifiers, ""));
+            _dispatcher.Dispatch(new Wearable("SNONE", "No shoes", WearableType.SHOES, emptyModifiers, ""));
+
             StartParsingJSON();
         }
 
