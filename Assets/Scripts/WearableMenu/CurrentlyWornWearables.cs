@@ -5,7 +5,13 @@ namespace Metis.ItemMenu
 {
     public static class CurrentlyWornWearables
     {
-        private static Dictionary<WearableType, GameObject> _currentlyWorn = new Dictionary<WearableType, GameObject>();
+        private static Dictionary<WearableType, GameObject> _currentlyWorn = new Dictionary<WearableType, GameObject>() {
+            { WearableType.HELMET, null},
+            { WearableType.TOP, null},
+            { WearableType.PANTS, null},
+            { WearableType.SHOES, null},
+            { WearableType.WEAPON, null},
+        };
 
         public static void PutOnNewWearable(Wearable newWearable)
         {
