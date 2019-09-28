@@ -1,0 +1,109 @@
+{
+    "Wearables" : 
+    [
+        {
+            "ID" : "H01",
+            "Name" : "Helmet 1",
+            "Type" : "HELMET",
+            "Modifiers" : [
+                {
+                    "Type" : "HIT_FORCE",
+                    "Value" : 0.1
+                },
+                {
+                    "Type" : "JUMP_FORCE",
+                    "Value" : -0.2
+                }
+            ],
+            "SpriteName": ""
+        },
+        {
+            "ID" : "H02",
+            "Name" : "Helmet 2",
+            "Type" : "HELMET",
+            "Modifiers" : [
+                {
+                    "Type" : "HIT_FORCE",
+                    "Value" : 0.0
+                },
+                {
+                    "Type" : "JUMP_FORCE",
+                    "Value" : 0.3
+                },
+                {
+                    "Type" : "PROTECTION",
+                    "Value" : 0.1
+                }
+            ],
+            "SpriteName": ""
+        },
+        {
+            "ID" : "T01",
+            "Name" : "T-shirt",
+            "Type" : "TOP",
+            "Modifiers" : [],
+            "SpriteName": ""
+        },
+        {
+            "ID" : "T02",
+            "Name" : "Armor",
+            "Type" : "TOP",
+            "Modifiers" : [
+                {
+                    "Type" : "HIT_FORCE",
+                    "Value" : 0.0
+                },
+                {
+                    "Type" : "JUMP_FORCE",
+                    "Value" : -0.3
+                },
+                {
+                    "Type" : "PROTECTION",
+                    "Value" : 0.3
+                }
+            ],
+            "SpriteName": "ArmourVisual"
+        },
+        {
+            "ID" : "P01",
+            "Name" : "Pants",
+            "Type" : "TROUSERS",
+            "Modifiers" : [
+                {
+                    "Type" : "HIT_FORCE",
+                    "Value" : 0.0
+                },
+                {
+                    "Type" : "JUMP_FORCE",
+                    "Value" : 0.0
+                },
+                {
+                    "Type" : "PROTECTION",
+                    "Value" : 0.1
+                }
+            ],
+            "SpriteName": "PantsVisual"
+        },
+        {
+            "ID" : "S01",
+            "Name" : "Shoes",
+            "Type" : "SHOES",
+            "Modifiers" : [
+                {
+                    "Type" : "MOVING_SPEED",
+                    "Value" : 2.0
+                },
+                {
+                    "Type" : "JUMP_FORCE",
+                    "Value" : 0.3
+                },
+                {
+                    "Type" : "PROTECTION",
+                    "Value" : 0.1
+                }
+            ],
+            "SpriteName": "ShoesVisual"
+        }
+    ]
+    
+}
