@@ -30,23 +30,23 @@ namespace Metis.ItemMenu
         public void FeedStatsValues(Wearable newWearable)
         {
             _nameValue.text = newWearable.Name;
-            _movingSpeedValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.MOVING_SPEED).ToString();
-            _protectionValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.PROTECTION).ToString();
-            _hitForceValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.HIT_FORCE).ToString();
-            _jumpForceValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.JUMP_FORCE).ToString();
+            _movingSpeedValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.MOVING_SPEED);
+            _protectionValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.PROTECTION);
+            _hitForceValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.HIT_FORCE);
+            _jumpForceValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.JUMP_FORCE);
             _visual.sprite = Resources.Load<Sprite>("ClothSprites/" + newWearable.SpriteName);
 
             CurrentlyWornWearables.PutOnNewWearable(newWearable);
         }
 
-        private float GetModifierValue(Modifier[] array, ModifierType type)
+        private string GetModifierValue(Modifier[] array, ModifierType type)
         {
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i].Type == type)
-                    return array[i].Value;
+                    return array[i].Value.ToString();
             }
-            return -1.0f;
+            return "N/A";
         }
     }
 }
