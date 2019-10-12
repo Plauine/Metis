@@ -64,6 +64,68 @@ ModelImporter:
     100116: Upper_Leg_L
     100118: Upper_Leg_R
     100120: Waist
+    100122: Foot.L
+    100124: Foot.R
+    100126: Hand.L
+    100128: Hand.R
+    100130: Head_end
+    100132: Index1.L
+    100134: Index1.R
+    100136: Index2.L
+    100138: Index2.R
+    100140: Index3.L
+    100142: Index3.L_end
+    100144: Index3.R
+    100146: Index3.R_end
+    100148: Little1.L
+    100150: Little1.R
+    100152: Little2.L
+    100154: Little2.R
+    100156: Little3.L
+    100158: Little3.L_end
+    100160: Little3.R
+    100162: Little3.R_end
+    100164: Lower Arm.L
+    100166: Lower Arm.L.001
+    100168: Lower Arm.R
+    100170: Lower Arm.R.001
+    100172: Lower Leg.L
+    100174: Lower Leg.R
+    100176: lowpoly_kopf.002
+    100178: Middle1.L
+    100180: Middle1.R
+    100182: Middle2.L
+    100184: Middle2.R
+    100186: Middle3.L
+    100188: Middle3.L_end
+    100190: Middle3.R
+    100192: Middle3.R_end
+    100194: Ring1.L
+    100196: Ring1.R
+    100198: Ring2.L
+    100200: Ring2.R
+    100202: Ring3.L
+    100204: Ring3.L_end
+    100206: Ring3.R
+    100208: Ring3.R_end
+    100210: "r\xFCstung_beine"
+    100212: "R\xFCstung_torso"
+    100214: Thump1.L
+    100216: Thump1.R
+    100218: Thump2.L
+    100220: Thump2.R
+    100222: Thump3.L
+    100224: Thump3.L_end
+    100226: Thump3.R
+    100228: Thump3.R_end
+    100230: Toes.L
+    100232: Toes.L_end
+    100234: Toes.R
+    100236: Toes.R_end
+    100238: Upper Arm.L
+    100240: Upper Arm.R
+    100242: Upper Leg.L
+    100244: Upper Leg.R
     400000: anzug1_torso
     400002: Armature
     400004: Chest
@@ -125,6 +187,68 @@ ModelImporter:
     400116: Upper_Leg_L
     400118: Upper_Leg_R
     400120: Waist
+    400122: Foot.L
+    400124: Foot.R
+    400126: Hand.L
+    400128: Hand.R
+    400130: Head_end
+    400132: Index1.L
+    400134: Index1.R
+    400136: Index2.L
+    400138: Index2.R
+    400140: Index3.L
+    400142: Index3.L_end
+    400144: Index3.R
+    400146: Index3.R_end
+    400148: Little1.L
+    400150: Little1.R
+    400152: Little2.L
+    400154: Little2.R
+    400156: Little3.L
+    400158: Little3.L_end
+    400160: Little3.R
+    400162: Little3.R_end
+    400164: Lower Arm.L
+    400166: Lower Arm.L.001
+    400168: Lower Arm.R
+    400170: Lower Arm.R.001
+    400172: Lower Leg.L
+    400174: Lower Leg.R
+    400176: lowpoly_kopf.002
+    400178: Middle1.L
+    400180: Middle1.R
+    400182: Middle2.L
+    400184: Middle2.R
+    400186: Middle3.L
+    400188: Middle3.L_end
+    400190: Middle3.R
+    400192: Middle3.R_end
+    400194: Ring1.L
+    400196: Ring1.R
+    400198: Ring2.L
+    400200: Ring2.R
+    400202: Ring3.L
+    400204: Ring3.L_end
+    400206: Ring3.R
+    400208: Ring3.R_end
+    400210: "r\xFCstung_beine"
+    400212: "R\xFCstung_torso"
+    400214: Thump1.L
+    400216: Thump1.R
+    400218: Thump2.L
+    400220: Thump2.R
+    400222: Thump3.L
+    400224: Thump3.L_end
+    400226: Thump3.R
+    400228: Thump3.R_end
+    400230: Toes.L
+    400232: Toes.L_end
+    400234: Toes.R
+    400236: Toes.R_end
+    400238: Upper Arm.L
+    400240: Upper Arm.R
+    400242: Upper Leg.L
+    400244: Upper Leg.R
     2100000: Material_001
     2100002: Material
     2100004: Material_004
@@ -139,6 +263,18 @@ ModelImporter:
     2100022: Material_008
     2100024: Material_009
     2100026: unnamed
+    2100028: Material.001
+    2100030: Material.004
+    2100032: Material.002
+    2100034: Material.003
+    2100036: Material.015
+    2100038: Material.010
+    2100040: Material.007
+    2100042: Material.006
+    2100044: Material.005
+    2100046: Material.008
+    2100048: Material.009
+    2100050: No Name
     4300000: r_stung_beine
     4300002: girl
     4300004: anzug1_torso
@@ -146,6 +282,9 @@ ModelImporter:
     4300008: Cylinder
     4300010: streifen
     4300012: lowpoly_kopf_002
+    4300014: "r\xFCstung_beine"
+    4300016: "R\xFCstung_torso"
+    4300018: lowpoly_kopf.002
     7400000: Default Take
     7400002: JumpHit
     7400004: Run
@@ -158,6 +297,9 @@ ModelImporter:
     13700008: r_stung_beine
     13700010: R_stung_torso
     13700012: streifen
+    13700014: lowpoly_kopf.002
+    13700016: "r\xFCstung_beine"
+    13700018: "R\xFCstung_torso"
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -171,38 +313,11 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Avatar creation failed:\n\tTransform 'Upper_Leg_L' for human
+      bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Default Take' has import animation warnings
-      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'Waist' has scale animation that will be
-      discarded.\n\t'Chest' has scale animation that will be discarded.\n\t'Neck'
-      has scale animation that will be discarded.\n\t'Head' has scale animation that
-      will be discarded.\n\t'Upper_Arm_L' has scale animation that will be discarded.\n\t'Upper_Arm_R'
-      has scale animation that will be discarded.\n\t'Upper_Leg_L' has scale animation
-      that will be discarded.\n\t'Upper_Leg_R' has scale animation that will be discarded.\n\nClip
-      'JumpHit' has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Waist'
-      has scale animation that will be discarded.\n\t'Chest' has scale animation that
-      will be discarded.\n\t'Neck' has scale animation that will be discarded.\n\t'Head'
-      has scale animation that will be discarded.\n\t'Upper_Arm_L' has scale animation
-      that will be discarded.\n\t'Upper_Arm_R' has scale animation that will be discarded.\n\t'Upper_Leg_L'
-      has scale animation that will be discarded.\n\t'Upper_Leg_R' has scale animation
-      that will be discarded.\n\nClip 'Run' has import animation warnings that might
-      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
-      retargeting quality.\n\t'Waist' has scale animation that will be discarded.\n\t'Chest'
-      has scale animation that will be discarded.\n\t'Neck' has scale animation that
-      will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'Upper_Arm_L'
-      has scale animation that will be discarded.\n\t'Upper_Arm_R' has scale animation
-      that will be discarded.\n\t'Upper_Leg_L' has scale animation that will be discarded.\n\t'Upper_Leg_R'
-      has scale animation that will be discarded.\n\nClip 'Walk' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation DOF
-      on avatar to improve retargeting quality.\n\t'Neck' has scale animation that
-      will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'Upper_Arm_L'
-      has scale animation that will be discarded.\n\t'Upper_Arm_R' has scale animation
-      that will be discarded.\n\t'Upper_Leg_L' has scale animation that will be discarded.\n\t'Upper_Leg_R'
-      has scale animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
