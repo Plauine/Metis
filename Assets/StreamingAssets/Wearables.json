@@ -8,11 +8,11 @@
             "Modifiers" : [
                 {
                     "Type" : "HIT_FORCE",
-                    "Value" : 0.1
+                    "Value" : 10
                 },
                 {
                     "Type" : "JUMP_FORCE",
-                    "Value" : -0.2
+                    "Value" : -20
                 }
             ],
             "SpriteName": ""
@@ -24,15 +24,15 @@
             "Modifiers" : [
                 {
                     "Type" : "HIT_FORCE",
-                    "Value" : 0.0
+                    "Value" : 0
                 },
                 {
                     "Type" : "JUMP_FORCE",
-                    "Value" : 0.3
+                    "Value" : 30
                 },
                 {
                     "Type" : "PROTECTION",
-                    "Value" : 0.1
+                    "Value" : 10
                 }
             ],
             "SpriteName": ""
@@ -51,15 +51,15 @@
             "Modifiers" : [
                 {
                     "Type" : "HIT_FORCE",
-                    "Value" : 0.0
+                    "Value" : 0
                 },
                 {
                     "Type" : "JUMP_FORCE",
-                    "Value" : -0.3
+                    "Value" : -30
                 },
                 {
                     "Type" : "PROTECTION",
-                    "Value" : 0.3
+                    "Value" : 30
                 }
             ],
             "SpriteName": "ArmourVisual"
@@ -71,15 +71,15 @@
             "Modifiers" : [
                 {
                     "Type" : "HIT_FORCE",
-                    "Value" : 0.0
+                    "Value" : 0
                 },
                 {
                     "Type" : "JUMP_FORCE",
-                    "Value" : 0.0
+                    "Value" : 0
                 },
                 {
                     "Type" : "PROTECTION",
-                    "Value" : 0.1
+                    "Value" : 10
                 }
             ],
             "SpriteName": "PantsVisual"
@@ -91,15 +91,15 @@
             "Modifiers" : [
                 {
                     "Type" : "MOVING_SPEED",
-                    "Value" : 2.0
+                    "Value" : 50
                 },
                 {
                     "Type" : "JUMP_FORCE",
-                    "Value" : 0.3
+                    "Value" : 30
                 },
                 {
                     "Type" : "PROTECTION",
-                    "Value" : 0.1
+                    "Value" : 10
                 }
             ],
             "SpriteName": "ShoesVisual"
