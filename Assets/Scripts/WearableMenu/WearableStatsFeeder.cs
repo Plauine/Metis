@@ -36,7 +36,7 @@ namespace Metis.ItemMenu
             _jumpForceValue.text = GetModifierValue(newWearable.Modifiers, ModifierType.JUMP_FORCE);
             _visual.sprite = Resources.Load<Sprite>("ClothSprites/" + newWearable.SpriteName);
 
-            CurrentlyWornWearables.PutOnNewWearable(newWearable);
+            CurrentlyWornWearables.TryOnNewWearable(newWearable);
         }
 
         private string GetModifierValue(Modifier[] array, ModifierType type)

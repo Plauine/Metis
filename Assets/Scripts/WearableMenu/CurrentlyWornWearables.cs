@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 namespace Metis.ItemMenu
 {
@@ -14,36 +12,75 @@ namespace Metis.ItemMenu
             { WearableType.WEAPON, null},
         };
 
-        public static Dictionary<ModifierType, float> _totalModifiers = new Dictionary<ModifierType, float>();
+        private static Dictionary<WearableType, Wearable> _currentlyTried = new Dictionary<WearableType, Wearable>() {
+            { WearableType.HELMET, null},
+            { WearableType.TOP, null},
+            { WearableType.PANTS, null},
+            { WearableType.SHOES, null},
+            { WearableType.WEAPON, null},
+        };
 
-        public static void PutOnNewWearable(Wearable newWearable)
+        public static Dictionary<ModifierType, float> TotalModifiersApplied = new Dictionary<ModifierType, float>()
         {
-            _currentlyWorn[newWearable.Type]?.WearableGameObject?.SetActive(false);
-            _currentlyWorn[newWearable.Type] = newWearable;
-            newWearable.WearableGameObject?.SetActive(true);
-            UpdateTotalModifiers();
-            Stats.AllStatsUpdator.UpdateValues();
+            { ModifierType.HIT_FORCE, 0},
+            { ModifierType.JUMP_FORCE, 0},
+            { ModifierType.MOVING_SPEED, 0},
+            { ModifierType.PROTECTION, 0},
+        };
+
+        public static Dictionary<ModifierType, float> TotalModifiersTried = new Dictionary<ModifierType, float>()
+        {
+            { ModifierType.HIT_FORCE, 0},
+            { ModifierType.JUMP_FORCE, 0},
+            { ModifierType.MOVING_SPEED, 0},
+            { ModifierType.PROTECTION, 0},
+        };
+
+        public static void ApplyOutfit()
+        {
+            _currentlyWorn = _currentlyTried;
+            UpdateTotalModifiersApplied();
         }
 
-        private static void UpdateTotalModifiers()
+        public static void TryOnNewWearable(Wearable newWearable)
         {
-            _totalModifiers.Clear();
-            foreach(var wearable in _currentlyWorn.Values)
+            _currentlyTried[newWearable.Type]?.WearableGameObject?.SetActive(false);
+            _currentlyTried[newWearable.Type] = newWearable;
+            newWearable.WearableGameObject?.SetActive(true);
+            UpdateTotalModifiersTried();
+            Stats.AllStatsUpdator.UpdateTried();
+        }
+
+        private static void UpdateTotalModifiersApplied()
+        {
+            UpdateDictionary(ref TotalModifiersApplied, _currentlyWorn);
+        }
+
+        private static void UpdateDictionary(ref Dictionary<ModifierType, float> dicoToUpdate, Dictionary<WearableType, Wearable> reference)
+        {
+            dicoToUpdate.Clear();
+            foreach (var wearable in reference.Values)
             {
                 if (wearable == null)
                     continue;
 
-                foreach(Modifier modifier in wearable?.Modifiers)
+                foreach (Modifier modifier in wearable?.Modifiers)
                 {
-                    if (_totalModifiers.ContainsKey(modifier.Type))
+                    if (dicoToUpdate.ContainsKey(modifier.Type))
                     {
-                        _totalModifiers[modifier.Type] += modifier.Value;
-                    } else
+                        dicoToUpdate[modifier.Type] += modifier.Value;
+                    }
+                    else
                     {
-                        _totalModifiers.Add(modifier.Type, modifier.Value);
+                        dicoToUpdate.Add(modifier.Type, modifier.Value);
                     }
                 }
             }
+        }
+
+        private static void UpdateTotalModifiersTried()
+        {
+            UpdateDictionary(ref TotalModifiersTried, _currentlyTried);
         }
     }
 }

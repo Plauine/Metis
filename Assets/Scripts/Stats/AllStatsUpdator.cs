@@ -6,25 +6,36 @@ namespace Metis.Stats
 {
     public class AllStatsUpdator : MonoBehaviour
     {
-        [SerializeField] private Slider _movingSpeedSlider, _protectionSlider, _hitForceSlider, _jumpForceSlider;
+        [SerializeField] private Stats.StatBarsController _movingSpeedController, _protectionController, _hitForceController, _jumpForceController;
 
         public static AllStatsUpdator Instance;
 
         private void Awake()
         {
             Instance = this;
-            UpdateValues();
+            UpdateApplied(true);
         }
 
-        public static void UpdateValues()
+        public static void UpdateApplied(bool isFirst = false)
         {
             if (Instance == null)
                 return;
 
-            Instance._movingSpeedSlider.value = CurrentlyWornWearables._totalModifiers[ModifierType.MOVING_SPEED];
-            Instance._protectionSlider.value = CurrentlyWornWearables._totalModifiers[ModifierType.PROTECTION];
-            Instance._hitForceSlider.value = CurrentlyWornWearables._totalModifiers[ModifierType.HIT_FORCE];
-            Instance._jumpForceSlider.value = CurrentlyWornWearables._totalModifiers[ModifierType.JUMP_FORCE];
+            Instance._movingSpeedController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersApplied[ModifierType.MOVING_SPEED], isFirst);
+            Instance._protectionController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersApplied[ModifierType.PROTECTION], isFirst);
+            Instance._hitForceController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersApplied[ModifierType.HIT_FORCE], isFirst);
+            Instance._jumpForceController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersApplied[ModifierType.JUMP_FORCE], isFirst);
+        }
+
+        public static void UpdateTried(bool isFirst = false)
+        {
+            if (Instance == null)
+                return;
+
+            Instance._movingSpeedController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersTried[ModifierType.MOVING_SPEED], isFirst);
+            Instance._protectionController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersTried[ModifierType.PROTECTION], isFirst);
+            Instance._hitForceController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersTried[ModifierType.HIT_FORCE], isFirst);
+            Instance._jumpForceController.CheckAndUpdate(CurrentlyWornWearables.TotalModifiersTried[ModifierType.JUMP_FORCE], isFirst);
         }
     }
 }
