@@ -77,6 +77,71 @@ ModelImporter:
     100142: Upper Leg.L
     100144: Upper Leg.R
     100146: Waist
+    100148: Armature.001
+    100150: Chest 1
+    100152: Foot.L 1
+    100154: Foot.R 1
+    100156: Hand.L 1
+    100158: Hand.R 1
+    100160: Head 1
+    100162: Head_end 1
+    100164: Hip 1
+    100166: Index1.L 1
+    100168: Index1.R 1
+    100170: Index2.L 1
+    100172: Index2.R 1
+    100174: Index3.L 1
+    100176: Index3.L_end 1
+    100178: Index3.R 1
+    100180: Index3.R_end 1
+    100182: Little1.L 1
+    100184: Little1.R 1
+    100186: Little2.L 1
+    100188: Little2.R 1
+    100190: Little3.L 1
+    100192: Little3.L_end 1
+    100194: Little3.R 1
+    100196: Little3.R_end 1
+    100198: Lower Arm.L 1
+    100200: Lower Arm.R 1
+    100202: Lower Leg.L 1
+    100204: Lower Leg.R 1
+    100206: Middle1.L 1
+    100208: Middle1.R 1
+    100210: Middle2.L 1
+    100212: Middle2.R 1
+    100214: Middle3.L 1
+    100216: Middle3.L_end 1
+    100218: Middle3.R 1
+    100220: Middle3.R_end 1
+    100222: Neck 1
+    100224: Ring1.L 1
+    100226: Ring1.R 1
+    100228: Ring2.L 1
+    100230: Ring2.R 1
+    100232: Ring3.L 1
+    100234: Ring3.L_end 1
+    100236: Ring3.R 1
+    100238: Ring3.R_end 1
+    100240: rootBone 1
+    100242: Thump1.L 1
+    100244: Thump1.R 1
+    100246: Thump2.L 1
+    100248: Thump2.R 1
+    100250: Thump3.L 1
+    100252: Thump3.L_end 1
+    100254: Thump3.R 1
+    100256: Thump3.R_end 1
+    100258: Toes.L 1
+    100260: Toes.L_end 1
+    100262: Toes.R 1
+    100264: Toes.R_end 1
+    100266: Upper Arm.L 1
+    100268: Upper Arm.R 1
+    100270: Upper Leg.L 1
+    100272: Upper Leg.R 1
+    100274: Waist 1
+    100276: body.001
     400000: //RootNode
     400002: Armature
     400004: bag
@@ -151,6 +216,71 @@ ModelImporter:
     400142: Upper Leg.L
     400144: Upper Leg.R
     400146: Waist
+    400148: Armature.001
+    400150: Chest 1
+    400152: Foot.L 1
+    400154: Foot.R 1
+    400156: Hand.L 1
+    400158: Hand.R 1
+    400160: Head 1
+    400162: Head_end 1
+    400164: Hip 1
+    400166: Index1.L 1
+    400168: Index1.R 1
+    400170: Index2.L 1
+    400172: Index2.R 1
+    400174: Index3.L 1
+    400176: Index3.L_end 1
+    400178: Index3.R 1
+    400180: Index3.R_end 1
+    400182: Little1.L 1
+    400184: Little1.R 1
+    400186: Little2.L 1
+    400188: Little2.R 1
+    400190: Little3.L 1
+    400192: Little3.L_end 1
+    400194: Little3.R 1
+    400196: Little3.R_end 1
+    400198: Lower Arm.L 1
+    400200: Lower Arm.R 1
+    400202: Lower Leg.L 1
+    400204: Lower Leg.R 1
+    400206: Middle1.L 1
+    400208: Middle1.R 1
+    400210: Middle2.L 1
+    400212: Middle2.R 1
+    400214: Middle3.L 1
+    400216: Middle3.L_end 1
+    400218: Middle3.R 1
+    400220: Middle3.R_end 1
+    400222: Neck 1
+    400224: Ring1.L 1
+    400226: Ring1.R 1
+    400228: Ring2.L 1
+    400230: Ring2.R 1
+    400232: Ring3.L 1
+    400234: Ring3.L_end 1
+    400236: Ring3.R 1
+    400238: Ring3.R_end 1
+    400240: rootBone 1
+    400242: Thump1.L 1
+    400244: Thump1.R 1
+    400246: Thump2.L 1
+    400248: Thump2.R 1
+    400250: Thump3.L 1
+    400252: Thump3.L_end 1
+    400254: Thump3.R 1
+    400256: Thump3.R_end 1
+    400258: Toes.L 1
+    400260: Toes.L_end 1
+    400262: Toes.R 1
+    400264: Toes.R_end 1
+    400266: Upper Arm.L 1
+    400268: Upper Arm.R 1
+    400270: Upper Leg.L 1
+    400272: Upper Leg.R 1
+    400274: Waist 1
+    400276: body.001
     2100000: Mat_skin
     2100002: Mat_hair
     2100004: Mat_eyes
@@ -178,6 +308,7 @@ ModelImporter:
     4300012: P03
     4300014: S00
     4300016: bag
+    4300018: body.001
     7400000: Armature|default_custom
     7400002: Armature|Idle
     7400004: Armature|Jump.001
@@ -203,6 +334,7 @@ ModelImporter:
     13700012: S01
     13700014: S02
     13700016: S03
+    13700018: body.001
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
